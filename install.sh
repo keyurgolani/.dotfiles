@@ -80,7 +80,21 @@ done
 
 # PASS
 
-sudo mv Others/hosts /etc/hosts
+sudo echo "#<additional-spyware-sites>" > /etc/hosts
+sudo echo "0.0.0.1 spylog.com" > /etc/hosts
+sudo echo "0.0.0.1 counter.spylog.com" > /etc/hosts
+sudo echo "0.0.0.1 openstat.net" > /etc/hosts
+sudo echo "0.0.0.1 rs.mail.ru" > /etc/hosts
+sudo echo "0.0.0.1 ad.mail.ru" > /etc/hosts
+sudo echo "0.0.0.1 www.roulettebotplus.com" > /etc/hosts
+sudo echo "0.0.0.1 adforce.ru" > /etc/hosts
+sudo echo "0.0.0.1 go.gamenet.ru" > /etc/hosts
+sudo echo "0.0.0.1 www.directadvert.ru" > /etc/hosts
+sudo echo "0.0.0.1 ad05f.ru" > /etc/hosts
+sudo echo "0.0.0.1 mg.dt00.net" > /etc/hosts
+sudo echo "0.0.0.1 zeobit.com" > /etc/hosts
+sudo echo "0.0.0.1 mackeeperapp.zeobit.com" > /etc/hosts
+sudo echo "#</additional-spyware-sites>" > /etc/hosts
 
 
 #################################
