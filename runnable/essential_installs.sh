@@ -23,13 +23,12 @@ brew tap caskroom/versions
 
 brew install python
 brew install python3
+brew cask install java
+brew cask install java-jdk-javadoc
 brew install git
 brew install gist
 brew install git-extras
 brew install node
-brew install grunt
-brew install grunt-cli
-brew install wallpaper
 brew install scala
 brew install sbt
 brew install vim --with-override-system-vi
@@ -37,6 +36,9 @@ brew install go
 brew install wget --with-iri
 brew install mvn
 brew install readline
+brew install grunt
+brew install grunt-cli
+brew install wallpaper
 
 
 brew cask install adobe-reader
@@ -48,8 +50,6 @@ brew cask install google-chrome
 brew cask install google-featured-photos
 brew cask install google-hangouts
 brew cask install gulp
-brew cask install java
-brew cask install java-jdk-javadoc
 brew cask install material-colors
 brew cask install microsoft-office
 brew cask install postman
