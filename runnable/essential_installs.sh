@@ -34,7 +34,7 @@ brew install sbt
 brew install vim --with-override-system-vi
 brew install go
 brew install wget --with-iri
-brew install mvn
+brew install maven
 brew install readline
 brew install grunt
 brew install grunt-cli
