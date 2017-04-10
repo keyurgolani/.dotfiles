@@ -37,7 +37,6 @@ brew install wget --with-iri
 brew install maven
 brew install readline
 brew install grunt
-brew install grunt-cli
 brew install wallpaper
 
 
