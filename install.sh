@@ -122,22 +122,56 @@ runnable/ssd.sh
 brew cleanup
 
 
+####################################
+# Kill affected applications          #
+####################################
 
+for app in "Activity Monitor" \
+  "Address Book" \
+  "Calendar" \
+  "cfprefsd" \
+  "Contacts" \
+  "Dock" \
+  "Finder" \
+  "Google Chrome Canary" \
+  "Google Chrome" \
+  "Mail" \
+  "Messages" \
+  "Opera" \
+  "Photos" \
+  "Safari" \
+  "SizeUp" \
+  "Spectacle" \
+  "SystemUIServer" \
+  "Terminal" \
+  "Transmission" \
+  "Tweetbot" \
+  "Twitter" \
+  "iCal"; do
+  killall "${app}" &> /dev/null
+done
 
+# Wait a bit before moving on...
+sleep 1
 
+echo "Done. Note that some of these changes require a logout/restart to take effect."
 
+# See if the user wants to reboot.
+function reboot() {
+  read -p "Do you want to reboot your computer now? (y/N)" choice
+  case "$choice" in
+    y | Yes | yes ) echo "Yes"; exit;; # If y | yes, reboot
+    n | N | No | no) echo "No"; exit;; # If n | no, exit
+    * ) echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return;;
+  esac
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Call on the function
+if [[ "Yes" == $(reboot) ]]
+then
+  echo "Rebooting."
+  sudo reboot
+  exit 0
+else
+  exit 1
+fi
