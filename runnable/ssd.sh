@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Ask for the administrator password upfront
-sudo -v
-
 # Turn off local Time Machine snapshots [laptops only]
 sudo tmutil disablelocal
 
