@@ -28,7 +28,7 @@ brew cask install lastpass
 brew cask install league-of-legends
 brew cask install lightpaper
 brew cask install menubar-stats
-brew cask install mongo-management-studio
+brew cask install robomongo
 brew cask install mongodb
 brew cask install mysql-connector-python
 brew cask install pycharm
