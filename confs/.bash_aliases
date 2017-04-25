@@ -238,3 +238,7 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+
+# Start an HTTP Server using Python at current directory
+alias servehttp='python -m SimpleHTTPServer'
