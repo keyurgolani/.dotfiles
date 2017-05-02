@@ -51,4 +51,7 @@ shopt -s histappend;
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 
-
+# Cool greeting at the beginning
+echo "Welcome to the dark side of the moon, $USER!"
+echo -e "Today is $(date)\nUptime: $(uptime)"
+echo "Go hack something!"
