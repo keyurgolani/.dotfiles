@@ -40,6 +40,9 @@ brew install grunt
 brew install wallpaper
 
 
+pip install --upgrade pip setuptools
+
+
 brew cask install adobe-reader
 brew cask install advancedcolors
 brew cask install appcleaner
