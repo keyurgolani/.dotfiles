@@ -206,3 +206,22 @@ function s() {
         sudo "$@"
     fi
 }
+
+function removeExcept() {
+  find * -maxdepth 0 -name $1 -prune -o -exec rm -rf '{}' ';'
+}
+
+function pollJobs() {
+  while [[ $(jobs -l | wc -l | sed 's/^ *//;s/ *$//') != 0 ]];
+  do
+    jobs -l
+    if [[ $# == 0 ]]; then
+        sleep 5
+    else
+        sleep $1
+    fi
+  done
+  echo -------------
+  echo All Jobs Done
+  echo -------------
+}
