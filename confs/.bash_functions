@@ -225,3 +225,8 @@ function pollJobs() {
   echo All Jobs Done
   echo -------------
 }
+
+# Validate JSON file with `cat jsonfile.json | validateJSON`
+function validateJSON() {
+  python -m json.tool  >> /dev/null && echo "Valid JSON" || echo "NOT valid JSON";
+}
