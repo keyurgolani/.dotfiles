@@ -107,6 +107,8 @@ runnable/essential_installs.sh
 chmod +x runnable/other_installs.sh
 runnable/other_installs.sh
 
+chmod +x runnable/sublime.sh
+runnable/sublime.sh
 
 #################################
 # MacOS Preferences				#
