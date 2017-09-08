@@ -75,10 +75,20 @@ for bin_file in bin/*; do
 done
 
 #################################
-# Install DevTerm Theme			#
+# Install DevTerm Theme	    #
 #################################
 
-# PASS
+# Install most beautiful fonts I've ever seen
+curl -O https://www.fontsquirrel.com/fonts/download/pt-mono
+unzip pt-mono
+rm -f SIL\ Open\ Font\ License.txt
+mv PTM55FT.ttf /Library/Fonts/
+
+# PASS on DevTerm Theme for now
+
+#################################
+# Blocking Spyware Sites    #
+#################################
 
 sudo echo "#<additional-spyware-sites>" > /etc/hosts
 sudo echo "0.0.0.1 spylog.com" > /etc/hosts
