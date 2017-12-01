@@ -244,4 +244,4 @@ alias egrep='egrep --color=auto'
 alias servehttp='python -m SimpleHTTPServer'
 
 # Export present working directory (PWD) to the path variable
-exportpwd='echo "export PATH=\$PATH:$(pwd)" >> ~/.bash_exports; source ~/.bash_exports'
+alias exportpwd='echo "export PATH=\$PATH:$(pwd)" >> ~/.bash_exports; source ~/.bash_exports'
